@@ -177,7 +177,7 @@ class MigrationsManager
      */
     public function create()
     {
-        $fileName = $this->getFileName(date('YmdHis'));
+        $fileName = $this->getFileName(gmdate('YmdHis'));
         if (!is_dir($this->dirPath)) {
             mkdir($this->dirPath);
         }
@@ -188,7 +188,7 @@ namespace ' . $this->namespace . ';
 use SimpleDatabaseMigrations\Migration\Version;
 
 /**
- * Version ' . date('Y-m-d H:i') . '
+ * Version ' . gmdate('Y-m-d H:i:s') . '
  */
 class ' . $fileName . ' extends Version
 {
