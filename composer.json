@@ -1,6 +1,6 @@
 {
     "name": "majpage/simple-database-migrations",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Simple PHP database migrations",
     "type": "library",
     "license": "MIT",
@@ -20,7 +20,7 @@
     },
     "require": {
         "php" : "^7.4 || ^8.0",
-        "majpage/simple-database": "^0.3.0",
+        "majpage/simple-database": "^0.3.1",
         "majpage/simple-structure": "^0.3.0"
     },
     "require-dev": {

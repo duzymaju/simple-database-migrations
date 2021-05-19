@@ -40,9 +40,10 @@ class MigrationsCommand
                 case 'migrate':
                     $removeUnknownFlag = '--remove-unknown';
                     $removeUnknown = in_array($removeUnknownFlag, $argv);
-                    $outputVersion = array_filter($argv, function ($argument) use ($removeUnknownFlag) {
+                    $arguments = array_filter($argv, function ($argument) use ($removeUnknownFlag) {
                         return $argument !== $removeUnknownFlag;
-                    })[0];
+                    });
+                    $outputVersion = count($arguments) > 0 ? $arguments[0] : null;
                     $this->manager->migrate($outputVersion, $removeUnknown);
                     echo 'All migrations implemented.' . "\r\n";
                     break;

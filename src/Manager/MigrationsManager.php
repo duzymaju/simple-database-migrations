@@ -151,9 +151,9 @@ class MigrationsManager
                 $migration = new $migrationClass($this->connection);
                 $migration->$direction();
             }
-            $this->connection->commit();
+            $this->connection->commit(false);
         } catch (MigrationException | DatabaseException $exception) {
-            $this->connection->rollBack();
+            $this->connection->rollBack(false);
             throw new MigrationException(
                 sprintf('Migrations have been rolled back because of an error: %s', $exception->getMessage()),
                 $exception->getCode(), $exception
