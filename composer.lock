@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07491b13f4d53888aafbcff7be7c2332",
+    "content-hash": "f03ac0ce60fd94ccc1f1b513953e5d13",
     "packages": [
         {
             "name": "majpage/simple-database",
-            "version": "0.3.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/duzymaju/simple-database.git",
-                "reference": "c01d2f4003f64a832084c8f7d116cc1d5f1e7e0e"
+                "reference": "96bf43fc800cb05c9bb5da21f4c024e267bb042c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duzymaju/simple-database/zipball/c01d2f4003f64a832084c8f7d116cc1d5f1e7e0e",
-                "reference": "c01d2f4003f64a832084c8f7d116cc1d5f1e7e0e",
+                "url": "https://api.github.com/repos/duzymaju/simple-database/zipball/96bf43fc800cb05c9bb5da21f4c024e267bb042c",
+                "reference": "96bf43fc800cb05c9bb5da21f4c024e267bb042c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-pdo": "*",
-                "majpage/simple-structure": "^0.3.0",
+                "majpage/simple-structure": "^0.3.1",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -48,22 +48,22 @@
             "description": "Simple PHP database client",
             "support": {
                 "issues": "https://github.com/duzymaju/simple-database/issues",
-                "source": "https://github.com/duzymaju/simple-database/tree/0.3.1"
+                "source": "https://github.com/duzymaju/simple-database/tree/0.4.0"
             },
-            "time": "2021-05-19T15:28:16+00:00"
+            "time": "2024-01-10T21:50:54+00:00"
         },
         {
             "name": "majpage/simple-structure",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/duzymaju/simple-structure.git",
-                "reference": "9a642b5507aa961e9d841c098218bfb9e3aaf825"
+                "reference": "85f14ec1129029a836b91bfc9f747b17f13de580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duzymaju/simple-structure/zipball/9a642b5507aa961e9d841c098218bfb9e3aaf825",
-                "reference": "9a642b5507aa961e9d841c098218bfb9e3aaf825",
+                "url": "https://api.github.com/repos/duzymaju/simple-structure/zipball/85f14ec1129029a836b91bfc9f747b17f13de580",
+                "reference": "85f14ec1129029a836b91bfc9f747b17f13de580",
                 "shasum": ""
             },
             "require": {
@@ -97,9 +97,9 @@
             "description": "Simple PHP project's structure",
             "support": {
                 "issues": "https://github.com/duzymaju/simple-structure/issues",
-                "source": "https://github.com/duzymaju/simple-structure/tree/0.3.0"
+                "source": "https://github.com/duzymaju/simple-structure/tree/0.3.1"
             },
-            "time": "2021-02-11T23:47:23+00:00"
+            "time": "2023-08-23T00:31:48+00:00"
         }
     ],
     "packages-dev": [
@@ -2204,5 +2204,5 @@
         "php": "^7.4 || ^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
