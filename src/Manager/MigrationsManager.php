@@ -291,7 +291,7 @@ class ' . $fileName . ' extends Version
     private function createTableIfNotExists()
     {
         if ($this->connection instanceof SqlConnectionInterface) {
-            $this->connection->query('CREATE TABLE IF NOT EXISTS `' . $this->tableName . '` (
+            $this->connection->rawQuery('CREATE TABLE IF NOT EXISTS `' . $this->tableName . '` (
     `version` char(14) NOT NULL,
     PRIMARY KEY (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci');

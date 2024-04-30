@@ -47,7 +47,7 @@ abstract class Version
         if (!method_exists($this->connection,'query')) {
             throw new MigrationException('There is no query method for this client.');
         }
-        $this->connection->query($statement);
+        $this->connection->rawQuery($statement);
 
         return $this;
     }
